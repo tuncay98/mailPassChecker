@@ -23,7 +23,7 @@ def check(log, passw):
 
 
 for password in Lines:
-    time.sleep(0.1)
+    #time.sleep(0.1)
     check(login, password)
 
 #check(login, password)
